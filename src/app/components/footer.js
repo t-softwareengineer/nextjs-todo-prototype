@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { FaGithubAlt } from "react-icons/fa6";
 
 const Footer = () => {
   const currentDate = new Date();
@@ -17,7 +18,7 @@ const Footer = () => {
       <small className="d-block mt-2 text-uppercase">
         copyright &copy; {currentDate.getFullYear()}
       </small>
-      <small>Created by @Github t-softwareengineer</small>
+      <small>Created by <FaGithubAlt /> t-softwareengineer</small>
     </footer>
   );
 }

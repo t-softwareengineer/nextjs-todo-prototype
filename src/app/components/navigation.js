@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { MdDashboard, MdAccountCircle } from 'react-icons/md';
 
 const OffcanvasNavbar = () => {
   useEffect(() => { import('bootstrap/dist/js/bootstrap'); }, []);
@@ -38,7 +39,7 @@ const OffcanvasNavbar = () => {
             <h5 
               className="offcanvas-title text-capitalize display-4" 
               id="offcanvasNavbarLabel"
-            > profile
+            > <MdAccountCircle />profile
             </h5>
             <button 
               type="button" 
@@ -51,7 +52,7 @@ const OffcanvasNavbar = () => {
           <div className="offcanvas-body p-4">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 text-capitalize">
               <li className="nav-item">
-                <a className="nav-link" href="/">home</a>
+                <a className="nav-link" href="/"><MdDashboard />home</a>
               </li>
             </ul>
           </div>
