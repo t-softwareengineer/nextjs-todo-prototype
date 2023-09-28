@@ -13,7 +13,9 @@ export default function RootLayout({ children }) {
       <body>
         <OffcanvasNavbar />
         <main>
-          {children}
+          <div className="mt-5 pt-5">
+            {children}
+          </div>
         </main>
         <Footer />
       </body>
